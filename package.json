@@ -1,0 +1,38 @@
+{
+  "name": "trias-hackathon-2023-backend",
+  "version": "1.0.0",
+  "description": "Trias Hackathon",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node  --harmony dist/index.ts",
+    "dev-start": "ts-node-dev --respawn src/index.ts",
+    "build-models": "npx stg --verbose -D mysql -h localhost -p 3306 -d  pharmacy -u root -x darwindennis03 --out-dir src/models --no-strict true"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/bluebird": "^3.5.42",
+    "@types/validator": "^13.11.7",
+    "av": "^0.4.9",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "helmet": "^7.0.0",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
+    "reflect-metadata": "^0.2.1",
+    "require": "^2.4.20",
+    "sequelize": "^6.35.2",
+    "sequelize-cli": "^6.6.2",
+    "sequelize-typescript": "^2.1.6",
+    "sequelize-typescript-generator": "^11.0.6",
+    "stg": "^0.0.3",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.6",
+    "mysql2": "^3.6.5"
+  }
+}
